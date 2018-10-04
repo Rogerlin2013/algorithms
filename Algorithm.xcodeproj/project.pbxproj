@@ -13,6 +13,7 @@
 		87E87B6F2165F2770013CE6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E87B6E2165F2770013CE6C /* Assets.xcassets */; };
 		87E87B722165F2770013CE6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E87B702165F2770013CE6C /* LaunchScreen.storyboard */; };
 		87E87B752165F2770013CE6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E87B742165F2770013CE6C /* main.m */; };
+		87E87B7D2165F2E60013CE6C /* BLPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E87B7C2165F2E60013CE6C /* BLPair.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		87E87B712165F2770013CE6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87E87B732165F2770013CE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87E87B742165F2770013CE6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87E87B7B2165F2E60013CE6C /* BLPair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLPair.h; sourceTree = "<group>"; };
+		87E87B7C2165F2E60013CE6C /* BLPair.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLPair.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				87E87B702165F2770013CE6C /* LaunchScreen.storyboard */,
 				87E87B732165F2770013CE6C /* Info.plist */,
 				87E87B742165F2770013CE6C /* main.m */,
+				87E87B7B2165F2E60013CE6C /* BLPair.h */,
+				87E87B7C2165F2E60013CE6C /* BLPair.m */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E87B6A2165F2750013CE6C /* ViewController.m in Sources */,
+				87E87B7D2165F2E60013CE6C /* BLPair.m in Sources */,
 				87E87B752165F2770013CE6C /* main.m in Sources */,
 				87E87B672165F2750013CE6C /* AppDelegate.m in Sources */,
 			);
@@ -283,7 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79ADTUVDN;
 				INFOPLIST_FILE = Algorithm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +299,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.beenlong.Algorithm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -299,7 +308,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79ADTUVDN;
 				INFOPLIST_FILE = Algorithm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.beenlong.Algorithm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
