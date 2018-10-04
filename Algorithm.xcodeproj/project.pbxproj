@@ -14,6 +14,7 @@
 		87E87B722165F2770013CE6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E87B702165F2770013CE6C /* LaunchScreen.storyboard */; };
 		87E87B752165F2770013CE6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E87B742165F2770013CE6C /* main.m */; };
 		87E87B7D2165F2E60013CE6C /* BLPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E87B7C2165F2E60013CE6C /* BLPair.m */; };
+		87E87B8021665A740013CE6C /* BLDeduplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E87B7F21665A740013CE6C /* BLDeduplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		87E87B742165F2770013CE6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87E87B7B2165F2E60013CE6C /* BLPair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLPair.h; sourceTree = "<group>"; };
 		87E87B7C2165F2E60013CE6C /* BLPair.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLPair.m; sourceTree = "<group>"; };
+		87E87B7E21665A740013CE6C /* BLDeduplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLDeduplication.h; sourceTree = "<group>"; };
+		87E87B7F21665A740013CE6C /* BLDeduplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLDeduplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				87E87B742165F2770013CE6C /* main.m */,
 				87E87B7B2165F2E60013CE6C /* BLPair.h */,
 				87E87B7C2165F2E60013CE6C /* BLPair.m */,
+				87E87B7E21665A740013CE6C /* BLDeduplication.h */,
+				87E87B7F21665A740013CE6C /* BLDeduplication.m */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E87B6A2165F2750013CE6C /* ViewController.m in Sources */,
+				87E87B8021665A740013CE6C /* BLDeduplication.m in Sources */,
 				87E87B7D2165F2E60013CE6C /* BLPair.m in Sources */,
 				87E87B752165F2770013CE6C /* main.m in Sources */,
 				87E87B672165F2750013CE6C /* AppDelegate.m in Sources */,

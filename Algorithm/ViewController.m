@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "BLPair.h"
+#import "BLDeduplication.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *inputTextField;
@@ -30,6 +31,16 @@
 }
 
 - (IBAction)action:(id)sender {
+    [self deDuplication];
+}
+
+- (void)deDuplication {
+    NSArray<NSNumber *> *inputArray = @[@(9), @(2), @(8), @(9), @(2), @(1), @(7), @(8), @(2)];
+    
+    [BLDeduplication deDuplication:inputArray];
+}
+
+- (void)Fibonacci {
     NSString *inputString = self.inputTextField.text;
     
     BLPair *pair = [BLPair FibPlus:inputString.integerValue];
