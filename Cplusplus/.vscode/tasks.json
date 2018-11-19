@@ -9,7 +9,7 @@
             "command": "g++",
             "args": [
                 "-o",
-                "heap_sort.out",
+                "./build_out/heap_sort.out",
                 "-g",
                 "heap_sort.cpp"
             ],
