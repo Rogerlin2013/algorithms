@@ -8,7 +8,7 @@
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/heap_sort.out",
+            "program": "${workspaceFolder}/build_out/heap_sort.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
