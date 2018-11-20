@@ -4,14 +4,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build heap_sort",
+            "label": "build",
             "type": "shell",
             "command": "g++",
             "args": [
                 "-o",
-                "./build_out/heap_sort.out",
+                "./build_out/main.out",
                 "-g",
-                "heap_sort.cpp"
+                "insert_sort.cpp"
             ],
             "group": {
                 "kind": "build",
