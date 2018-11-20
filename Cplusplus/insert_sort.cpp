@@ -11,7 +11,7 @@ void insert_sort(vector<int> &array) {
         int newValue = array[i];
         int search_index = sorted_index;
         int dest_pos = sorted_index;
-        
+
         while (search_index >= 0 && array[search_index] >= newValue) {
             dest_pos = search_index--;
         }
@@ -30,6 +30,19 @@ void insert_sort(vector<int> &array) {
     }
 }
 
+void insert_sort2(vector<int> &array) {
+    for (int i = 1; i < array.size(); ++i) {
+        int newValue = array[i];
+
+        int j = i - 1;
+        while (j >= 0 && array[j] > newValue) {
+            array[j + 1] = array[j];
+            --j;
+        }
+        array[j + 1] = newValue;
+    }
+}
+
 int main(int argc, char const *argv[])
 {
     std::vector<int> array;
@@ -43,7 +56,7 @@ int main(int argc, char const *argv[])
         std::cout << ' ' << *it;
     std::cout << '\n';
 
-    insert_sort(array);
+    insert_sort2(array);
 
     std::cout << "Array after start..." << std::endl;
     for (it = array.begin(); it < array.end(); it++)
