@@ -9,12 +9,11 @@ void insert_sort(vector<int> &array) {
     for (int i = 0; i < array.size(); ++i) {
         
         int newValue = array[i];
-        
         int search_index = sorted_index;
         int dest_pos = sorted_index;
+        
         while (search_index >= 0 && array[search_index] >= newValue) {
-            dest_pos = search_index;
-            --search_index;
+            dest_pos = search_index--;
         }
 
         if (dest_pos < sorted_index) {
