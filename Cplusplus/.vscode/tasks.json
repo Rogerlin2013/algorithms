@@ -11,7 +11,7 @@
                 "-o",
                 "./build_out/main.out",
                 "-g",
-                "merge_sort.cpp"
+                "quick_sort.cpp"
             ],
             "group": {
                 "kind": "build",
