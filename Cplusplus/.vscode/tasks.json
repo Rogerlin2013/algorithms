@@ -11,7 +11,7 @@
                 "-o",
                 "./build_out/main.out",
                 "-g",
-                "quick_sort.cpp"
+                "binary_search.cpp"
             ],
             "group": {
                 "kind": "build",
