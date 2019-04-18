@@ -11,7 +11,7 @@
                 "-o",
                 "./build_out/main.out",
                 "-g",
-                "binary_search.cpp"
+                "./backtracking/8Queens.cpp"
             ],
             "group": {
                 "kind": "build",
