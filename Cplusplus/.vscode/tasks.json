@@ -11,7 +11,7 @@
                 "-o",
                 "./build_out/main.out",
                 "-g",
-                "./backtracking/8Queens.cpp"
+                "./backtracking/0-1knapsack.cpp"
             ],
             "group": {
                 "kind": "build",
