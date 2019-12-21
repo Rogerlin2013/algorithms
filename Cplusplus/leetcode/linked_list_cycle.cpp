@@ -52,4 +52,50 @@ public:
 
         return false;
     }
+
+    ListNode *detectCycle(ListNode *head) {
+        ListNode *p1 = head;
+        ListNode *p2 = head;
+        ListNode *p3 = nullptr;
+
+        while(p2) {
+            p1 = p1->next;
+            p2 = p2->next;
+            if (p2) {
+                p2 = p2->next;
+            }
+
+            if(nullptr != p2 && p1 == p2){
+                p3 = p2;
+                break;
+            }
+        }
+
+        if (p3) {
+            p1 = head;
+
+            while (p1 != p3)
+            {
+                p1 = p1->next;
+                p3 = p3->next;
+            }
+            return p3;
+        }
+        return nullptr;
+    }
+
+    ListNode *detectCycle2(ListNode *head) {
+        unordered_set<ListNode*> nodeSet;
+
+        while(head) {
+            auto pos = nodeSet.find(head);
+            if (pos != nodeSet.end()) {
+                return *pos;
+            }else {
+                nodeSet.insert(head);
+            }
+            head = head->next;
+        }
+        return nullptr;
+    }
 };
