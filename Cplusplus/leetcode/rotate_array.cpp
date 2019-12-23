@@ -2,40 +2,21 @@
 
 using namespace std;
 
+// 暴力法
 void rotate(vector<int>& nums, int k) {
-    if (nums.size() < 2 || k < 1) {
-        return;
-    }
+    for(int i = 0; i < k; i++) {
+        int count = nums.size();
+        int lastValue = nums[count - 1];
 
-    int count = nums.size();
-    int curCount = 0;
-
-    int actualK = k % count;
-
-    for (int i = 0; curCount < count; i++) {
-        int destIndex = i;
-        int sourceIndex = -1;
-        int firstNum = nums[destIndex];
-
-        do {
-            sourceIndex = destIndex - actualK;
-            if (sourceIndex < 0) {
-                sourceIndex += count;
-            }
-
-            if (destIndex == i) {
-                nums[destIndex] = firstNum;
-                curCount++;
-                break;
-            }else {
-                curCount++;
-                nums[destIndex] = nums[sourceIndex];
-            }
-            destIndex = sourceIndex;
-        }while (true);
+        for (size_t j = count - 1; j > 0; j--)
+        {
+            nums[j] = nums[j - 1];
+        }
+        nums[0] = lastValue;
     }
 }
-// ok
+
+// 环状替换
 void rotate(vector<int>& nums, int k) {
     if (nums.size() < 2 || k < 1) {
         return;
@@ -60,5 +41,29 @@ void rotate(vector<int>& nums, int k) {
         current = next;
         curCount++;
         }while (current != start);
+    }
+}
+
+// 反转法
+
+void rotate(vector<int>& nums, int k) {
+    if (nums.size() < 2 || k < 1) {
+        return;
+    }
+
+    reverse(nums, 0, nums.size() - 1);
+    k = k % nums.size();
+    reverse(nums, 0, k - 1);
+    reverse(nums, k, nums.size() - 1);
+}
+
+void reverse(vector<int>& nums, int start, int end) {
+    int swapCount = (end - start + 1) / 2;
+
+    for (size_t i = 0; i < swapCount; i++)
+    {
+        int temp = nums[end - i];
+        nums[end - i] = nums[start + i];
+        nums[start + i] = temp;
     }
 }
