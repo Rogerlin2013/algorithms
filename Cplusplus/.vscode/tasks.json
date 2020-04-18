@@ -23,7 +23,7 @@
             "label": "msvc build",
             "type": "shell",
             "command": "cl.exe",
-            "args": ["/EHsc", "/Zi", "/Fe:", "./build_out/main.exe", "./dp/fibonacci.cpp"],
+            "args": ["/EHsc", "/Zi", "/Fe:", "./build_out/main.exe", "./dp/coin_change.cpp"],
             "group": {
               "kind": "build",
               "isDefault": true
