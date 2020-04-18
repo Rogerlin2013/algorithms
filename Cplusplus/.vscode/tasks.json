@@ -23,7 +23,7 @@
             "label": "msvc build",
             "type": "shell",
             "command": "cl.exe",
-            "args": ["/EHsc", "/Zi", "/Fe:", "./build_out/main.exe", "./leetcode/max_area.cpp", "main.cpp"],
+            "args": ["/EHsc", "/Zi", "/Fe:", "./build_out/main.exe", "./dp/fibonacci.cpp"],
             "group": {
               "kind": "build",
               "isDefault": true
